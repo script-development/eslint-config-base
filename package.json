@@ -1,20 +1,21 @@
 {
-  "name": "@script-development/eslint-config-base",
-  "version": "0.0.1",
-  "author": "Script info@script.nl https://script.nl/",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/script-development/eslint-config-base.git"
+  "devDependencies": {
+    "@script-development/eslint-config-ts": "workspace:*",
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^8.45.0",
+    "prettier": "^2.5.1",
+    "turbo": "latest"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
-  "peerDependencies": {
-    "eslint": ">= 3"
+  "packageManager": "pnpm@7.15.0",
+  "name": "eslint-config",
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
   }
 }

@@ -1,0 +1,23 @@
+.bg-gr-purple {
+  @apply bg-gradient-to-r from-purple-600 to-pink-600;
+}
+
+.bg-gr-sunset {
+  @apply  bg-gradient-to-r from-red-600 to-orange-600;
+}
+
+.bg-gr-morning {
+  @apply bg-gradient-to-r from-pink-800 to-orange-600;
+}
+
+.text-gr-purple {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600;
+}
+
+.text-gr-sunset {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-orange-600;
+}
+
+.text-gr-morning {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-orange-600;
+}
