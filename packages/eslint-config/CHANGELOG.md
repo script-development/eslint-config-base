@@ -1,5 +1,11 @@
 # @script-development/eslint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- de460c0: Change import rules
+
 ## 0.0.2
 
 ### Patch Changes

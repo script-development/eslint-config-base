@@ -1,5 +1,13 @@
 # @script-development/eslint-config-ts
 
+## 0.0.3
+
+### Patch Changes
+
+- de460c0: Change import rules
+- Updated dependencies [de460c0]
+  - @script-development/eslint-config@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes
