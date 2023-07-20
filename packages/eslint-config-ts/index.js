@@ -9,6 +9,9 @@ module.exports = {
     settings: {
         'import/resolver': {
             node: {extensions: ['.js', '.mjs', '.ts', '.vue', '.d.ts']},
+            'typescript': {
+                'alwaysTryTypes': true,
+            },
         },
     },
     parser: '@typescript-eslint/parser',
