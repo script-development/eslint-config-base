@@ -1,0 +1,16 @@
+
+.prose img {
+  width: 100%;
+}
+
+.content {
+    position: relative;
+    h1 {
+        @apply lg:mb-16;
+    }
+    @apply mt-12 md:mt-26 prose prose-invert text-left px-4 md:px-12 max-w-screen;
+}
+
+#nprogress {
+  pointer-events: none;
+}

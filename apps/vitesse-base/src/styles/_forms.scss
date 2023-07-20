@@ -1,0 +1,9 @@
+
+.form-input {
+  label {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300;
+  }
+  input {
+    @apply block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:placeholder-gray-400 dark:text-white hover:border-blue-500 transition-all duration-300 dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+}
