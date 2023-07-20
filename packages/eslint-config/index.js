@@ -61,7 +61,6 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-else-return': ['error', {allowElseIf: false}],
         'no-constructor-return': 'error',
-        'no-duplicate-imports': 'error',
         'no-self-compare': 'error',
         'no-unmodified-loop-condition': 'error',
         'no-unreachable-loop': 'error',
@@ -153,5 +152,9 @@ module.exports = {
             },
         ],
         'import/no-named-as-default-member': 0,
+
+        // Infavor off import/no-duplicates
+        'no-duplicate-imports': 'off',
+        'import/no-duplicates': ['error', {'prefer-inline': false}],
     },
 };
