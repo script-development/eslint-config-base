@@ -14,7 +14,7 @@
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "eslint-config-base",
+  "name": "eslint-config",
   "dependencies": {
     "@changesets/cli": "^2.26.2"
   }
