@@ -1,5 +1,13 @@
 # @script-development/eslint-config-ts
 
+## 0.0.4
+
+### Patch Changes
+
+- Add plugin-unused-imports
+- Updated dependencies
+  - @script-development/eslint-config@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes

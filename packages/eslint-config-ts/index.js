@@ -27,15 +27,15 @@ module.exports = {
             'error',
             {'ts-ignore': 'allow-with-description'},
         ],
-        // @TODO :: Fix this rule
-        // "@typescript-eslint/no-unused-vars": [
-        //   "error",
-        //   {
-        //     argsIgnorePattern: "_",
-        //     destructuredArrayIgnorePattern: "_",
-        //     ignoreRestSiblings: true,
-        //   },
-        // ],
+        
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                'argsIgnorePattern': '^_',
+                'destructuredArrayIgnorePattern': '_',
+                'ignoreRestSiblings': true,
+            },
+        ],
         '@typescript-eslint/array-type': 'error',
         '@typescript-eslint/consistent-type-assertions': [
             'error',

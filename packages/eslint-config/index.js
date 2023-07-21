@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['eslint:recommended', 'plugin:import/recommended'],
+    extends: ['eslint:recommended', 'plugin:import/recommended', 'unused-imports'],
     plugins: ['promise'],
     settings: {
         'import/resolver': {
@@ -14,19 +14,19 @@ module.exports = {
         complexity: ['error', 5],
         'max-lines-per-function': [
             'warn',
-            {max: 30, skipBlankLines: true, skipComments: true},
+            { max: 30, skipBlankLines: true, skipComments: true },
         ],
         'max-lines': [
             'warn',
-            {max: 300, skipBlankLines: true, skipComments: true},
+            { max: 300, skipBlankLines: true, skipComments: true },
         ],
-        indent: ['warn', 4, {SwitchCase: 1}],
+        indent: ['warn', 4, { SwitchCase: 1 }],
         'comma-dangle': ['warn', 'always-multiline'],
         'array-bracket-spacing': ['warn', 'never'],
         'space-before-blocks': ['warn', 'always'],
-        'arrow-spacing': ['warn', {before: true, after: true}],
-        'keyword-spacing': ['warn', {before: true, after: true}],
-        quotes: ['warn', 'single', {avoidEscape: true}],
+        'arrow-spacing': ['warn', { before: true, after: true }],
+        'keyword-spacing': ['warn', { before: true, after: true }],
+        quotes: ['warn', 'single', { avoidEscape: true }],
         'no-console': 'warn',
         'object-curly-spacing': 'warn',
         'arrow-parens': ['warn', 'as-needed'],
@@ -35,31 +35,29 @@ module.exports = {
         'dot-notation': 'warn',
         'grouped-accessor-pairs': ['warn', 'getBeforeSet'],
         'no-return-await': 'warn',
-        'no-underscore-dangle': ['warn', {allowAfterThis: true}],
+        'no-underscore-dangle': ['warn', { allowAfterThis: true }],
         'spaced-comment': 'warn',
         yoda: 'warn',
         'no-warning-comments': 'warn',
 
         'padding-line-between-statements': [
             'warn',
-            {blankLine: 'always', prev: '*', next: 'return'},
-            {blankLine: 'always', prev: '*', next: 'multiline-const'},
+            { blankLine: 'always', prev: '*', next: 'return' },
+            { blankLine: 'always', prev: '*', next: 'multiline-const' },
         ],
 
         'max-depth': ['error', 4],
-        'max-statements-per-line': ['error', {max: 2}],
+        'max-statements-per-line': ['error', { max: 2 }],
         'array-callback-return': 'error',
-        'require-atomic-updates': ['error', {allowProperties: true}],
+        'require-atomic-updates': ['error', { allowProperties: true }],
         'block-scoped-var': 'error',
         curly: ['error', 'multi-or-nest'],
         eqeqeq: 'error',
         'func-style': ['error', 'expression'],
-        'id-length': ['error', {exceptions: ['_']}],
+        'id-length': ['error', { exceptions: ['_'] }],
         'max-nested-callbacks': 'error',
-        'new-cap': ['error', {newIsCapExceptions: ['default']}],
-
-        'no-unused-vars': 'off',
-        'no-else-return': ['error', {allowElseIf: false}],
+        'new-cap': ['error', { newIsCapExceptions: ['default'] }],
+        'no-else-return': ['error', { allowElseIf: false }],
         'no-constructor-return': 'error',
         'no-self-compare': 'error',
         'no-unmodified-loop-condition': 'error',
@@ -85,7 +83,7 @@ module.exports = {
         'no-new-func': 'error',
         'no-new-object': 'error',
         'no-new-wrappers': 'error',
-        'no-param-reassign': ['error', {props: false}],
+        'no-param-reassign': ['error', { props: false }],
         'no-sequences': 'error',
         'no-shadow': 'off',
         'no-throw-literal': 'error',
@@ -100,13 +98,13 @@ module.exports = {
         'no-useless-return': 'error',
         'no-var': 'error',
         'no-void': 'error',
-        'no-restricted-imports': ['warn', {patterns: ['../..*']}],
+        'no-restricted-imports': ['warn', { patterns: ['../..*'] }],
 
         'object-shorthand': 'error',
 
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
-        'prefer-destructuring': ['error', {array: false, object: true}],
+        'prefer-destructuring': ['error', { array: false, object: true }],
         'prefer-object-spread': 'error',
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
@@ -124,7 +122,7 @@ module.exports = {
         /**
          * Imports
          */
-        'import/newline-after-import': ['error', {count: 1}],
+        'import/newline-after-import': ['error', { count: 1 }],
         'import/no-mutable-exports': 'error',
         'import/no-absolute-path': 'off',
         'import/named': 'off',
@@ -155,6 +153,9 @@ module.exports = {
 
         // Infavor off import/no-duplicates
         'no-duplicate-imports': 'off',
-        'import/no-duplicates': ['error', {'prefer-inline': false}],
-    },
+        'import/no-duplicates': ['error', { 'prefer-inline': false }],
+
+        'no-unused-vars': 'off',
+        'unused-imports/no-unused-imports': 'error'
+    }
 };

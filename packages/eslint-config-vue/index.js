@@ -46,7 +46,7 @@ module.exports = {
                 selector:
           "CallExpression[callee.type='Identifier'][callee.name='$emit']",
                 message:
-          '$emit is not type safe, so we must use `const emit = defineEmits<{}>()`',
+          '$emit is not type safe, so we use `const emit = defineEmits<{}>()`',
             },
         ],
         // Prettier handles this rule
