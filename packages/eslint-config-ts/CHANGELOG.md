@@ -1,5 +1,12 @@
 # @script-development/eslint-config-ts
 
+## 0.0.5
+
+### Patch Changes
+
+- Updated dependencies
+  - @script-development/eslint-config@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes

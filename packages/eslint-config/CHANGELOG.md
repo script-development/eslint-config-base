@@ -1,5 +1,11 @@
 # @script-development/eslint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- fix: use as plugin instead of extending
+
 ## 0.0.4
 
 ### Patch Changes
