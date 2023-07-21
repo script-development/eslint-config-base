@@ -1,6 +1,6 @@
 module.exports = {
-    extends: ['eslint:recommended', 'plugin:import/recommended', 'unused-imports'],
-    plugins: ['promise'],
+    extends: ['eslint:recommended', 'plugin:import/recommended'],
+    plugins: ['promise', 'unused-imports'],
     settings: {
         'import/resolver': {
             node: {
