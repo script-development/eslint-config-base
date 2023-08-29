@@ -99,6 +99,7 @@ module.exports = {
         'no-var': 'error',
         'no-void': 'error',
         'no-restricted-imports': ['warn', { patterns: ['../..*'] }],
+        'no-multiple-empty-lines': ["error", { "max": 1, "maxBOF": 1, "maxEOF": 0 }] ,
 
         'object-shorthand': 'error',
 
