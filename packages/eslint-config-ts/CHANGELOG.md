@@ -1,5 +1,13 @@
 # @script-development/eslint-config-ts
 
+## 0.0.6
+
+### Patch Changes
+
+- Add no-multiple-lines and vue-padding-line-between-tags consistent
+- Updated dependencies
+  - @script-development/eslint-config@0.0.6
+
 ## 0.0.5
 
 ### Patch Changes
