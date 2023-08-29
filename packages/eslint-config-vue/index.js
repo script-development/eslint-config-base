@@ -115,8 +115,8 @@ module.exports = {
         ],
 
         'vue/padding-line-between-blocks': ['error'],
-
-        'vue/padding-line-between-tags': ['error'],
+        
+        'vue/padding-line-between-tags': ['error', [{blankLine: 'consistent', prev: "*", next: "*"}]],
 
         'vue/component-name-in-template-casing': ['error'],
 
