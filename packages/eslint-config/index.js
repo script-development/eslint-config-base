@@ -77,6 +77,16 @@ module.exports = {
         'no-lone-blocks': 'error',
         'no-lonely-if': 'error',
         'no-loop-func': 'error',
+        "no-magic-numbers": [
+            "error",
+            {
+                ignoreArrayIndexes: true,
+                ignoreDefaultValues: true,
+                enforceConst: false,
+                detectObjects: false,
+                ignore: [-1, -0, 1]
+            }
+        ],
         'no-multi-assign': 'error',
         'no-negated-condition': 'error',
         'no-nested-ternary': 'error',
@@ -99,7 +109,7 @@ module.exports = {
         'no-var': 'error',
         'no-void': 'error',
         'no-restricted-imports': ['warn', { patterns: ['../..*'] }],
-        'no-multiple-empty-lines': ["error", { "max": 1, "maxBOF": 1, "maxEOF": 0 }] ,
+        'no-multiple-empty-lines': ["error", { "max": 1, "maxBOF": 1, "maxEOF": 0 }],
 
         'object-shorthand': 'error',
 
