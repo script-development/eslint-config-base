@@ -1,5 +1,11 @@
 # @script-development/eslint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- No magic numbers
+
 ## 0.0.6
 
 ### Patch Changes
