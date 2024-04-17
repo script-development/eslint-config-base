@@ -1,5 +1,14 @@
 # @script-development/eslint-config-vue
 
+## 0.0.8
+
+### Patch Changes
+
+- Updated packages
+- Updated dependencies
+  - @script-development/eslint-config@0.0.8
+  - @script-development/eslint-config-ts@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes

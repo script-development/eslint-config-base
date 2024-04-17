@@ -1,5 +1,11 @@
 # @script-development/eslint-config
 
+## 0.0.8
+
+### Patch Changes
+
+- Updated packages
+
 ## 0.0.7
 
 ### Patch Changes
