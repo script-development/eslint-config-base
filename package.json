@@ -8,14 +8,14 @@
   },
   "devDependencies": {
     "@script-development/eslint-config-ts": "workspace:*",
-    "@turbo/gen": "^1.9.7",
-    "eslint": "^8.45.0",
-    "prettier": "^2.5.1",
+    "@turbo/gen": "^1.13.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@7.15.0",
+  "packageManager": "pnpm@9.0.1",
   "name": "eslint-config",
   "dependencies": {
-    "@changesets/cli": "^2.26.2"
+    "@changesets/cli": "^2.27.1"
   }
 }
