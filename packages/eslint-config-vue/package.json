@@ -6,13 +6,13 @@
   "dependencies": {
     "@script-development/eslint-config-ts": "workspace:*",
     "@script-development/eslint-config": "workspace:*",
-    "eslint-plugin-vue": "^9.25.0",
+    "eslint-plugin-vue": "^9.28.0",
     "local-pkg": "^0.5.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^9.12.0"
   }
 }
