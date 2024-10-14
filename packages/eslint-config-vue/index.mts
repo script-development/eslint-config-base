@@ -1,16 +1,16 @@
 import { isPackageExists } from "local-pkg";
-import type { Linter } from "eslint";
 import pluginVue from 'eslint-plugin-vue'
+import tsEslint from 'typescript-eslint'
 import scriptLint from '@script-development/eslint-config'
 import typeScriptLint from '@script-development/eslint-config-ts'
 
 const TS = isPackageExists('typescript')
 
 // We extend either our TS config (Which extends our base) or base directly
-// const baseLintRules = TS ? typeScriptLint : scriptLint
+const baseLintRules = TS ? typeScriptLint : scriptLint
 
-export default [
-    ...scriptLint,
+export default tsEslint.config(
+    ...baseLintRules,
     ...pluginVue.configs['flat/recommended'],
     {
         name: '@script-development/eslint-config-vue',
@@ -21,6 +21,9 @@ export default [
                 defineProps: 'readonly',
                 defineModel: 'readonly',
                 T: 'readonly',
+            },
+            parserOptions:{
+                parser: tsEslint.parser,
             }
         },
         rules: {
@@ -163,6 +166,5 @@ export default [
 
             'vue/static-class-names-order': 'error',
         }
-    },
-] satisfies Linter.Config[];
+    });
 

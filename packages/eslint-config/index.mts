@@ -3,11 +3,13 @@ import { Linter } from 'eslint';
 import importPlugin from 'eslint-plugin-import';
 import promisePlugin from 'eslint-plugin-promise'
 import unusedImportsPlugin from 'eslint-plugin-unused-imports'
+import tsEslint from 'typescript-eslint'
 
-export default [
+export default tsEslint.config(
     eslint.configs.recommended,
     importPlugin.flatConfigs.recommended,
     {
+        name:'@script-development/eslint-config',
         settings: {
             'import/resolver': {
                 node: {
@@ -178,4 +180,4 @@ export default [
             'unused-imports/no-unused-imports': 'error'
         }
     }
-] satisfies Linter.Config[];
+)
