@@ -4,9 +4,9 @@ import type {AxiosError, AxiosRequestConfig, Method} from 'axios'
 import axios from 'axios'
 import {ref} from 'vue'
 
-import {getEnv} from './env'
-
 import {useMainStore} from '~/stores/main'
+
+import {getEnv} from './env'
 
 const BASE_URL = getEnv('VITE_API_URL')
 export const requesting = ref(false)
@@ -35,8 +35,7 @@ const doRequest = async(config: AxiosRequestConfig) => {
         requesting.value = false
     }
 }
-
-// eslint-disable-next-line complexity
+ 
 const createRequestConfig = async(method: Method, uri: string, body?: any): Promise<AxiosRequestConfig> => {
     const url = new URL(`${BASE_URL}/${uri}`)
 

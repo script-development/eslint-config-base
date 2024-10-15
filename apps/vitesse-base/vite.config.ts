@@ -12,7 +12,7 @@ import {defineConfig} from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import Markdown from 'vite-plugin-md'
 import Pages from 'vite-plugin-pages'
-import { VitePWA } from 'vite-plugin-pwa'
+import {VitePWA} from 'vite-plugin-pwa'
 import Layouts from 'vite-plugin-vue-layouts'
 import WindiCSS from 'vite-plugin-windicss'
 
