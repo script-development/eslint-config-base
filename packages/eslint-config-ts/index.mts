@@ -26,12 +26,10 @@ export default tsEslint.config(
 
         rules: {
             '@typescript-eslint/consistent-type-imports': 'error',
-
             '@typescript-eslint/ban-ts-comment': [
                 'error',
                 { 'ts-ignore': 'allow-with-description' },
             ],
-
             '@typescript-eslint/no-unused-vars': [
                 'error',
                 {

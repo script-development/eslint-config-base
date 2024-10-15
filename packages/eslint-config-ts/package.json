@@ -5,8 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "@script-development/eslint-config": "workspace:*",
-    "typescript-eslint": "^8.8.1",
-    "@typescript-eslint/parser": "^8.8.1",
+    "typescript-eslint": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
     "eslint-import-resolver-typescript": "^3.6.3"
   },
   "publishConfig": {
